@@ -1,0 +1,26 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+      - ./backend/database:/app/database
+    environment:
+      - DATABASE_URL=file:/app/database/dev.db
+    depends_on:
+      - frontend
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - frontend-node-modules:/app/node_modules
+    command: npm run dev -- --host
+    environment:
+      - NODE_ENV=development
+
+volumes:
+  frontend-node-modules:

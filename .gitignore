@@ -8,10 +8,5 @@ backend/node_modules/
 dist/
 build/
 
-# Volumes e banco de dados
-backend/database/dev.db
-frontend/.env
-backend/.env
-
 # Logs
 *.log

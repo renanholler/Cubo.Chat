@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/renanholler/backend-cubo.chat.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/renanholler/frontend-cubo.chat.git

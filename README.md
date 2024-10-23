@@ -1,6 +1,10 @@
-# Projeto Principal
-
-Este repositório contém dois subprojetos: um **backend** feito com NestJS e Prisma, e um **frontend** que utiliza Vite. O objetivo deste README é fornecer as instruções necessárias para configurar e rodar ambos os subprojetos.
+<div align="center">
+  <image height="32em" src="https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
+  <image height="32em" src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white"/>
+  <image height="32em" src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white" />
+  <image height="32em" src="https://shields.io/badge/react-black?logo=react&style=for-the-badge" />
+  <image height="32em" src="https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC" />
+</div>
 
 ## Instalação
 

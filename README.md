@@ -6,6 +6,8 @@
   <image height="32em" src="https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC" />
 </div>
 
+<img width="1896" alt="capa" src="https://github.com/user-attachments/assets/71c7d4e4-90d4-40d0-af9e-655445ab9acb">
+
 ## Instalação
 
 Após clonar o repositório principal, será necessário instalar as dependências tanto do backend quanto do frontend.

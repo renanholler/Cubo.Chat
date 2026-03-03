@@ -8,8 +8,6 @@
 
 <img width="1896" alt="capa" src="https://github.com/user-attachments/assets/71c7d4e4-90d4-40d0-af9e-655445ab9acb">
 
-Aqui está o markdown limpo, em um único bloco, sem nada extra para quebrar:
-
 ## Installation
 
 After cloning the main repository, you will need to install the dependencies for both the backend and the frontend.

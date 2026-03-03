@@ -8,98 +8,97 @@
 
 <img width="1896" alt="capa" src="https://github.com/user-attachments/assets/71c7d4e4-90d4-40d0-af9e-655445ab9acb">
 
-## Instalação
+Aqui está o markdown limpo, em um único bloco, sem nada extra para quebrar:
 
-Após clonar o repositório principal, será necessário instalar as dependências tanto do backend quanto do frontend.
+## Installation
 
-### Clonar o Repositório
+After cloning the main repository, you will need to install the dependencies for both the backend and the frontend.
 
-Primeiro, clone o repositório:
+### Clone the Repository
 
-```bash
-  git clone <url-do-repositorio>`
-  cd <nome-do-repositorio>`
-```
-
-### Submódulos
-
-Os subprojetos são versionados como submódulos neste repositório. Para baixar o conteúdo completo, execute o seguinte comando:
+First, clone the repository:
 
 ```bash
-  git submodule update --init --recursive
+git clone <repository-url>
+cd <repository-name>
 ```
 
-## Configuração Backend
+### Submodules
 
-O backend utiliza **NestJS** e **Prisma** como ORM para interagir com o banco de dados. Siga os passos abaixo para configurá-lo:
-
-### 1. Instalar Dependências
-
-Entre na pasta do backend e instale as dependências:
+The subprojects are versioned as submodules in this repository. To download the full content, run the following command:
 
 ```bash
-  cd backend/
-  npm install
+git submodule update --init --recursive
 ```
 
-### 2. Configurar Variáveis de Ambiente
+## Backend Setup
 
-Renomeie o arquivo `.env.example` para `.env`.
+The backend uses **NestJS** and **Prisma** as the ORM to interact with the database. Follow the steps below to set it up:
 
-### 3. Rodar Migrations e Seed
+### 1. Install Dependencies
 
-Para garantir que o banco de dados esteja atualizado, execute as migrations e a seed:
+Navigate to the backend folder and install the dependencies:
 
 ```bash
-  npx prisma migrate dev
+cd backend/
+npm install
 ```
 
-Se verificar que a seed não foi rodada automaticamente, pode rodar assim:
-```base
-  npx prisma db seed
-```
+### 2. Configure Environment Variables
 
-## Configuração Frontend
+Rename the `.env.example` file to `.env`.
 
-O frontend utiliza **Vite** para desenvolvimento. Siga os passos abaixo para configurá-lo:
+### 3. Run Migrations and Seed
 
-### 1. Instalar Dependências
-
-Entre na pasta do frontend e instale as dependências:
+To ensure the database is up to date, run the migrations and seed:
 
 ```bash
-  cd frontend/
-  npm install
+npx prisma migrate dev
 ```
 
-### 2. Solucionar Problemas de Dependências (se necessário)
+If the seed does not run automatically, you can execute it manually:
 
-Se você estiver utilizando um Mac com arquitetura ARM (Apple Silicon), pode ser necessário rodar o seguinte procedimento para corrigir problemas com dependências opcionais:
+```bash
+npx prisma db seed
+```
 
-1. Remova a pasta `node_modules` e o arquivo `package-lock.json`.
-2. Limpe o cache do npm com o comando `npm cache clean --force`.
-3. Reinstale as dependências com `npm install`.
+## Frontend Setup
 
-## Rodando os Projetos
+The frontend uses **Vite** for development. Follow the steps below to set it up:
+
+### 1. Install Dependencies
+
+Navigate to the frontend folder and install the dependencies:
+
+```bash
+cd frontend/
+npm install
+```
+
+### 2. Fix Dependency Issues (if necessary)
+
+If you are using a Mac with ARM architecture (Apple Silicon), you may need to follow this procedure to fix optional dependency issues:
+
+1. Delete the `node_modules` folder and the `package-lock.json` file.
+2. Clear the npm cache using `npm cache clean --force`.
+3. Reinstall the dependencies with `npm install`.
+
+## Running the Projects
 
 ### Backend
 
-Para rodar o servidor backend em modo de desenvolvimento:
+To run the backend server in development mode:
 
 ```bash
-  cd backend
-  npm run start:dev
+cd backend
+npm run start:dev
 ```
 
 ### Frontend
 
-Para rodar o servidor frontend em modo de desenvolvimento:
+To run the frontend server in development mode:
 
 ```bash
-  cd frontend
-  npm run dev
+cd frontend
+npm run dev
 ```
-
-## Conclusão
-
-Todo esse procedimento será automatizado usando docker-compose, mas pelo tempo da entrega foi organizado esse README.
